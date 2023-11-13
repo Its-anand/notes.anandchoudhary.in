@@ -66,7 +66,7 @@
         }
         }
         else{
-            alert("No");
+            alert("No information found");
         }
         ?>
     </main> 
