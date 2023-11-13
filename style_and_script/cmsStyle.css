@@ -1,0 +1,53 @@
+:root{
+    --bgcolor: #1a1b1f;
+    --header: #262931;
+    --heading: #fff;
+    --logo: #0080FF;
+    --link: #abc7ff;
+    --code: #abc7ff6c;
+    --localLink: #c4c6d0;
+    --menuBar: #abc7ff;
+    --text: rgb(240, 246, 255);
+    --textFaded: rgba(240, 246, 255, 0.605);
+    --scrollBarTrack: #424242;
+    --scrollBarThumb:#686868;
+    --scrollBarHover: #7d7d7d;
+}
+::placeholder{
+    color: var(--textFaded);
+}
+body{
+    margin: 0%;
+    background-color: var(--bgcolor);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100VH;
+    color: var(--text);
+    font-family: Inter,-apple-system,system-ui,Helvetica Neue,Helvetica,Arial,sans-serif;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 90%;
+    height: 40rem;
+}
+input, textarea, select{
+    height: 3rem;
+    border: none;
+    border-radius: 15px;
+    background-color: var(--code);
+    padding-left: 1rem;
+    color: var(--text);
+    outline: none;
+    cursor: pointer;
+}
+textarea{
+    height: 15rem;
+    padding: 1rem;
+    resize: none;
+}
+#submitButton:hover{
+    color: var(--textFaded);
+}

@@ -1,7 +1,9 @@
 :root {
-    --bgcolor: #202020;
+    --bgcolor: #1a1b1f;
     --header: #262626;
     --heading: #fff;
+    --logo: #0080FF;
+    --borderColor: #abc7ff;
     --text: rgb(240, 246, 255);
     --scrollBarTrack: #424242;
     --scrollBarThumb:#686868;
@@ -43,10 +45,10 @@ main{
 #logo{
     width: 100px;
     height: auto;
-    fill: var(--heading);
+    fill: var(--logo);
 }
 #search{
-    border: 3px solid var(--heading);
+    border: 3px solid var(--borderColor);
     border-radius: 10px;
     width: 25rem;
     height: 3rem;
@@ -54,12 +56,13 @@ main{
     padding-left: 1rem;
     font-size: 1.1rem;
     color: var(--text);
+    outline: none;
 }
 .books{
     text-decoration: none;
     color: var(--text);
     font-weight: bolder;
-    border: 3px solid var(--heading);
+    border: 3px solid var(--borderColor);
     border-radius: 10px;
     width: 10rem;
     height: 5rem;
