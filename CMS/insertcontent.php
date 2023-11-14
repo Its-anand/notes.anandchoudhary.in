@@ -15,8 +15,9 @@
         <h2>Insert Content</h2>
         <select name="selectLanguage" id="selectLanguage">
             <option >Select Language</option>
-            <option value="dart">Dart</option>
             <option value="php">Php</option>
+            <option value="dart">Empty</option>
+            
         </select>
         <input type="text" name="heading" placeholder="Heading.." id="">
         <textarea name="content" id="" placeholder="Code.."></textarea>
@@ -41,7 +42,6 @@
                     $table = 'php_PTR';
                 break;
         }
-        echo($table);
         $checkQuery="SELECT * FROM $table WHERE id = $id";
         $result = mysqli_query($con,$checkQuery);
         if($result){
