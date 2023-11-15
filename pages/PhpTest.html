@@ -53,7 +53,7 @@
         <!--Idea End-->
         
         <section class="topics">
-            <h2 class="subheading">Isset function</h2>
+            <h2 class="subheading" id="Isset_function">Isset function</h2>
             <p>The isset function in PHP is used to determine whether a variable is set or not. A variable is considered as a set variable if it has a value other than NULL. In other words, you can also say that the isset function is used to determine whether you have used a variable in your code or not before.</p>
             <code>
                 if(isset($_POST['submit'])){}
@@ -62,12 +62,16 @@
     </main> 
 
     <aside id="aside">
-
+        <div class="asideContentContainer"><h2>Table of content</h2></div>
+        <ul >
+            <li onclick="openNavigation()"><a href="#Isset_function">Isset function</a></li>
+        </ul>
     </aside> 
     <script>
         let aside = document.getElementById('aside');
+        aside.style.right="0px";
         function openNavigation(){
-            (aside.style.right == "-20rem" || aside.style.right == '')? aside.style.right="0rem": aside.style.right="-20rem";
+            (aside.style.right == "-100%" || aside.style.right == '' && window.innerWidth<1090)? aside.style.right="0px": aside.style.right="-100%";
         }
     </script>
 </body>

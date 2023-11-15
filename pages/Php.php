@@ -72,14 +72,14 @@
     </main> 
 
      <aside id="aside">
-        <h2>Table of content</h2>
+        <div class="asideContentContainer"><h2>Table of content</h2></div>
         <ul >
           <?php 
 
           $result = mysqli_query($con, $query);
           if(mysqli_num_rows($result)>0){
           while($FetchedData=mysqli_fetch_assoc($result)){ ?>
-            <li><a href="<?php echo('#'.$FetchedData['id']); ?>"><?php echo($FetchedData['heading']);?></a></li>
+            <li onclick="openNavigation()"><a href="<?php echo('#'.$FetchedData['id']); ?>"><?php echo($FetchedData['heading']);?></a></li>
         <?php
           }}
         ?>
@@ -87,8 +87,9 @@
     </aside> 
     <script>
         let aside = document.getElementById('aside');
+        aside.style.right="0px";
         function openNavigation(){
-            (aside.style.right == "-20rem" || aside.style.right == '')? aside.style.right="0rem": aside.style.right="-20rem";
+            (aside.style.right == "-100%" || aside.style.right == '')? aside.style.right="0px": aside.style.right="-100%";
         }
     </script>
 </body>

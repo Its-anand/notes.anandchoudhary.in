@@ -133,6 +133,12 @@ header{
 #navigation:hover .middleline{
     width: 70%;
 }
+#navigation:active .menuLine{
+    width: 100%;
+}
+#navigation:active .middleline{
+    width: 70%;
+}
 /*XXXXXXXXXXXXXXXXXXXXXXXXXXXXX--------Main--------XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX*/
 main{
     margin:9rem 35rem 0 7rem; 
@@ -194,7 +200,8 @@ aside li{
 }
 aside li::before{ 
   
-    content: "\2B9E"; 
+    content: url('../images/aside_arrow.svg'); 
+
     margin-right: 1rem;
 } 
 li{
@@ -219,9 +226,9 @@ aside a{
 @media screen and (max-width:1090px) {
     aside{
         background-color: var(--header);
-        top: 6rem;
+        top: 5rem;
         width: 20rem;
-        right: -20rem; 
+        right: -100%; 
     }
 
     main {
@@ -235,8 +242,19 @@ aside a{
     aside{
         width:100%;
     }
+    .asideContentContainer h2{
+        margin-left: 1rem;
+    }
+    .asideContentContainer, aside ul{
+        width: 100%;
+        max-width: 28rem;
+    }
     main {
         margin: 9rem 2rem 0 1rem;
+        font-size: 1.1rem;
+    }
+    main p {
+        font-size: 1rem;
     }
     header{
         padding: 1.5rem 1rem;
