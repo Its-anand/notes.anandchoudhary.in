@@ -215,7 +215,7 @@ aside a{
     color: red;
 }
 .greenText{
-    color: gree;
+    color: green;
 }
 
 
@@ -250,7 +250,7 @@ aside a{
         max-width: 28rem;
     }
     main {
-        margin: 9rem 2rem 0 1rem;
+        margin: 8rem 2rem 0 1rem;
         font-size: 1.1rem;
     }
     main p {
@@ -258,6 +258,9 @@ aside a{
     }
     header {
         padding: 1rem;
+    }
+    main #heading {
+        margin: 2rem 0;
     }
     aside {
         top: 4rem;
