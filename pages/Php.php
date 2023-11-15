@@ -87,10 +87,11 @@
     </aside> 
     <script>
         let aside = document.getElementById('aside');
-
+        if (window.innerWidth < 1090) {
         function openNavigation(){
             (aside.style.right == "-100%" || aside.style.right == '')? aside.style.right="0px": aside.style.right="-100%";
         }
+    }
     </script>
 </body>
 </html>
