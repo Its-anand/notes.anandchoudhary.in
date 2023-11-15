@@ -53,7 +53,7 @@
         <!--Idea End-->
         <?php 
         include '../includes/includes.php';
-        $query = "SELECT * FROM php_PTR";
+        $query = "SELECT * FROM php_PTR ORDER BY date DESC";
         $result = mysqli_query($con, $query);
         if(mysqli_num_rows($result)>0){
         ?>
