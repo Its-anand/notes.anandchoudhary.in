@@ -259,6 +259,17 @@ aside a{
     header{
         padding: 1.5rem 1rem;
     }
+    .logoContainer {
+        width: 7rem;
+        font-size: 1.1rem;
+    }
+    #navigation {
+        width: 1.8rem;
+        height: 1.3rem;
+    }
+    .menuLine {
+        height: 0.15rem;
+    }
 }
 
 @media screen and (max-width: 400px){
