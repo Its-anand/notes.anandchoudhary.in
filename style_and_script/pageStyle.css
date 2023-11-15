@@ -256,12 +256,18 @@ aside a{
     main p {
         font-size: 1rem;
     }
-    header{
-        padding: 1.5rem 1rem;
+    header {
+        padding: 1rem;
+    }
+    aside {
+        top: 4rem;
     }
     .logoContainer {
         width: 7rem;
         font-size: 1.1rem;
+    }
+    #logo {
+        width: 25px;
     }
     #navigation {
         width: 1.8rem;
