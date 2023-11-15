@@ -89,7 +89,6 @@
         let aside = document.getElementById('aside');
 
         function openNavigation(){
-            aside.style.right="0px";
             (aside.style.right == "-100%" || aside.style.right == '')? aside.style.right="0px": aside.style.right="-100%";
         }
     </script>
