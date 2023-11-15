@@ -27,6 +27,11 @@
 #closeAlertButton:hover{
     color: var(--textFaded);
 }
+@media screen and (max-width:500px) {
+    #alert{
+        width:97%;
+    }
+}
 </style>
 <?php
     function alert($notice){
