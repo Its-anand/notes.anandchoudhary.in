@@ -10,10 +10,8 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../style_and_script/pageStyle.css">
-    <title>Php</title>
-    <style>
+    <title><?php echo $language?></title>
 
-    </style>
 </head>
 <body>
     <header>
@@ -41,7 +39,7 @@
         </nav>
     </header>
     <main>
-        <h1 id="heading">To the point</h1>
+        <!-- <h1 id="heading">To the point</h1> -->
 
         <!--Idea-->
         
