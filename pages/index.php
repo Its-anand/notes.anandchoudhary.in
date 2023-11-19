@@ -1,4 +1,7 @@
 <!DOCTYPE html>
+<?php
+    $language = $_GET['language'];
+?>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -39,6 +42,7 @@
     </header>
     <main>
         <h1 id="heading">To the point</h1>
+
         <!--Idea-->
         
         <!-- <section class="topics">
@@ -53,7 +57,7 @@
         <!--Idea End-->
         <?php 
         include '../includes/includes.php';
-        $query = "SELECT * FROM php_PTR ORDER BY unique_id DESC";
+        $query = "SELECT * FROM $language ORDER BY unique_id DESC";
         $result = mysqli_query($con, $query);
         if(mysqli_num_rows($result)>0){
         ?>
