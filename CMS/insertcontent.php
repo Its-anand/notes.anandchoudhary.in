@@ -15,9 +15,23 @@
         <h2>Insert Content</h2>
         <select name="selectLanguage" id="selectLanguage">
             <option >Select Language</option>
+            <option value="html">Html</option>
+            <option value="css">Css</option>
+            <option value="sass">Sass</option>
+            <option value="javascript">JavaScript</option>
             <option value="php">Php</option>
-            <option value="dart">Empty</option>
-            
+            <option value="mysql">Mysql</option>
+            <option value="figma">Figma</option>
+            <option value="uiux">UI/UX</option>
+            <option value="c">C language</option>
+            <option value="cpp">cpp language</option>
+            <option value="dart">Dart</option>
+            <option value="flutter">Flutter</option>
+            <option value="ajax">Ajax</option>
+            <option value="reactjs">React js</option>
+            <option value="nextjs">Next js</option>
+            <option value="nodejs">Node js</option>
+            <option value="datastructure">Data Structure</option>
         </select>
         <input type="text" name="heading" placeholder="Heading.." id="">
         <textarea name="content" id="" placeholder="Code.."></textarea>
@@ -35,11 +49,53 @@
         $code = mysqli_real_escape_string($con, $content);
         $table=null;
         switch($selectLanguage){
-            case "Empty":
-                $table = 'temp1';
+            case "html":
+                $table = 'html';
+                break;
+            case "css":
+                    $table = 'css';
+                break;
+            case "javascript":
+                $table = 'javascript';
                 break;
             case "php":
                     $table = 'php_PTR';
+                break;
+            case "mysql":
+                $table = 'mysql';
+                break;
+            case "figma":
+                    $table = 'figma';
+                break;
+            case "c":
+                    $table = 'c';
+                break;
+            case "cpp":
+                $table = 'cpp';
+                break;
+            case "dart":
+                $table = 'dart';
+                break;
+            case "flutter":
+                    $table = 'flutter';
+                break;
+            case "ajax":
+                $table = 'ajax';
+                break;
+            case "reactjs":
+                    $table = 'reactjs';
+                break;
+            case "nextjs":
+                $table = 'nextjs';
+                break;
+            case "nodejs":
+                    $table = 'nodejs';
+                break;
+            case "sass":
+                    $table = 'sass';
+                break;
+            case "datastructure":
+                    $table = 'datastructure';
                 break;
         }
         $checkQuery="SELECT * FROM $table WHERE id = $id";
