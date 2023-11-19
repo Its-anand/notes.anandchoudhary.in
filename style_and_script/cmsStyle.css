@@ -43,6 +43,7 @@ input, textarea, select{
     outline: none;
     cursor: pointer;
 }
+
 textarea{
     height: 15rem;
     padding: 1rem;
@@ -50,4 +51,11 @@ textarea{
 }
 #submitButton:hover{
     color: var(--textFaded);
+}
+#selectLanguage option{
+    color:var(--header);
+}
+#selectLanguage option:first-child{
+    color:var(--heading);
+    display: none;
 }
