@@ -250,8 +250,11 @@ aside a{
         max-width: 28rem;
     }
     main {
-        margin: 8rem 2rem 0 1rem;
+        margin: 8rem 1rem;
         font-size: 1.1rem;
+    }
+    .topics{
+        width: unset;
     }
     main p {
         font-size: 1rem;
@@ -281,11 +284,3 @@ aside a{
     }
 }
 
-@media screen and (max-width: 400px){
-main {
-    margin: 9rem 0.5rem;
-}
-.topics{
-    width: unset;
-}
-}

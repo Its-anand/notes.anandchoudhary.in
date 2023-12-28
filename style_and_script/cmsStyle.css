@@ -59,3 +59,18 @@ textarea{
     color:var(--heading);
     display: none;
 }
+/*---------------------------------------Image Upload Page--------------------------------------*/
+.fileUploadHolder{
+    /*background-color: var(--code);
+    height: 22rem;
+    overflow-y: auto;*/
+    
+}
+#imageUpload{
+    display: flex;
+    align-items: center;
+
+}
+#imageUpload::file-selector-button{
+    
+}

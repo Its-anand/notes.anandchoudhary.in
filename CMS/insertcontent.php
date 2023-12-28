@@ -31,6 +31,7 @@
             <option value="reactjs">React js</option>
             <option value="nextjs">Next js</option>
             <option value="nodejs">Node js</option>
+            <option value="java">Java</option>
             <option value="datastructure">Data Structure</option>
         </select>
         <input type="text" name="heading" placeholder="Heading.." id="">
@@ -94,6 +95,9 @@
             case "sass":
                     $table = 'sass';
                 break;
+            case "java":
+                    $table = 'java';
+                break;                
             case "datastructure":
                     $table = 'datastructure';
                 break;
