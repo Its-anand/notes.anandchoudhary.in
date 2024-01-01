@@ -156,6 +156,9 @@ content: '# ';
 color: var(--link);
 cursor: pointer;
 }
+img{
+    width: 100%;
+}
 code{
     background-color: var(--code);
     padding: 1rem;
@@ -211,13 +214,15 @@ aside a{
     color: var(--localLink);
 }
 /*XXXXXXXXXXXXXXXXXXXXXXXXXXXXX--------Code Highlighting--------XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX*/
-.redText{
+.red{
     color: red;
 }
-.greenText{
+.green{
     color: green;
 }
-
+.gray{
+    color: gray;
+}
 
 
 

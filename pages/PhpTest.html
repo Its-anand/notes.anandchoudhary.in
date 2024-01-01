@@ -7,7 +7,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../style_and_script/pageStyle.css">
-    <title>Php</title>
+    <title>Java</title>
     <style>
 
     </style>
@@ -45,7 +45,7 @@
             <h2 class="subheading">Heading of the topic</h2>
             <p>Random text</p>
             <code>
-                main(){ <br> &nbsp; printf("Hello"); <br> }
+                main(){ <br> &nbsp; printf("&nbsp; means space"); <br> }
             </code>
             <p>Random text</p>
         </section> -->
@@ -53,10 +53,53 @@
         <!--Idea End-->
         
         <section class="topics">
-            <h2 class="subheading" id="Isset_function">What is font?</h2>
-            <p>A displayable typography of different size shape and color which represent information</p>
-            <img src="../images/font.png" alt="">
-            <p></p>
+            <h2 class="subheading" id="Isset_function">Introduction to java</h2>
+            <ul>
+                <li>Java is a case sensitive programming language</li>
+                <li>It is necessary to create a class with the same name as the name of that file in which that class is</li>
+                <li>Java is nearly a object oriented programming language</li>
+                <li>In java it not possible to make function outside of class since all java files contains a class with the same name as java file</li>
+                <li>There are four access specifier public, private, protected, default</li>
+                <li>In java dot(.) is used to access the static member like member function or member variable of the class</li>
+            </ul>
+            <code>
+                <span class="gray">1</span>   &nbsp;public class TestRun { <br>
+                <span class="gray">2</span>   &nbsp;&nbsp; public static void main(String[] args){<br>
+                <span class="gray">3</span>   &nbsp;&nbsp; System.out.println("This is a test run");<br>
+                <span class="gray">4</span>   &nbsp;&nbsp;}<br>
+                <span class="gray">5</span>   &nbsp;}
+            </code>
+            <ul>
+                <li>In the first line it is not necessary to use public if not used then the default access specifier will be added</li>
+                <li>In first line We can not make the first class private or protected it can only be public or default</li>
+                <li>Just like in cpp when we create <b>static</b> member function then it no more belong to a object but can be call without creating object that is why we used <b>static</b> before main function so that it can be accessed by the operating system without creating object</li>
+                <li>We can pass value in main function when we are running it with command line and that is why we used String[] args to get value in main function</li>
+                <li>In line 3 System is a class Out is a static reference variable and it is referring to an object of a class, This object name is printStream and there is a function inside that printStream whose name is println</li>
+                <h3>Compilation</h3>
+                <ul>
+                    <li>In java source code is converted into byte code this byte code can only be understand by jvm </li>
+                    <li>Byte code uses .class extension and if there are 5 class in source code then five different .class files will be created</li>
+                </ul>
+                <h3>Interpretation</h3>
+                <ul>
+                    <li>Interpretation is done by jvm java virtual machine which contains a just in time compiler <b>(Interpreter)</b></li>
+                    <li>Jvm read byte code <b>Line by line</b>, It takes one line then convert it in machine understandable code then while machine is running that code it interpret more line and save them for the execution</li>
+                </ul>
+            </ul>
+                <img src="../images/JavaSourceCode.jpg" alt="">
+                <h3>Execution</h3>
+                <li>javac is java compiler after which we write the name of the file and its extension</li>
+                <li><b>Like these: </b>javac TestRun.java</li>
+                <li>Then after compilation a file with byte code will be generated to run it we will run a exe file name java </li>
+                <li><b>Like This: </b>java TestRun</li>
+                <li>Notice something, We didn't write extension of the file TestRun</li>
+                <li>Hit enter and it will give output</li>
+                <code>
+                    <span class="gray">1</span>   &nbsp;c:\java\jdk1\bin> javac TestRun.java <br>
+                    <span class="gray">2</span>   &nbsp;c:\java\jdk1\bin> java TestRun 
+                </code>
+            
+            
         </section>
     </main> 
 
