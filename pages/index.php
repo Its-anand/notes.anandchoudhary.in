@@ -55,7 +55,7 @@
         <!--Idea End-->
         <?php 
         include '../includes/includes.php';
-        $query = "SELECT * FROM $language ORDER BY unique_id DESC";
+        $query = "SELECT * FROM $language ORDER BY unique_id ";
         $result = mysqli_query($con, $query);
         if(mysqli_num_rows($result)>0){
         ?>
