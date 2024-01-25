@@ -53,35 +53,22 @@
         <!--Idea End-->
         
         <section class="topics">
-            <h2 class="subheading" id="Isset_function">Data type</h2>
-            <pre class="code">
-import java.util.Scanner;
+            <h2 class="subheading" id="Isset_function">One value in all variable</h2>
+      <!--#############################*******************************$$$$$$$$$$$**************************#########################################-->
 
-class SupClass {
-    private int num;
 
-    class SubClass {
-        Scanner scan = new Scanner(System.in);
+<p> You can also assign the same value to multiple variables in one line:</p>
+<h3>Example</h3>
+<pre class="code">
+  int x, y, z;
+  x = y = z = 50;
+  System.out.println(x + y + z);
+</pre>
 
-        public void readFun() {
-            System.out.println("Enter a number: ");
-            num = scan.nextInt();
-        }
-    }
-}
 
-public class TestRun {
-    public static void main(String[] args) {
-        SupClass obj = new SupClass();
-        SupClass.SubClass subObj = obj.new SubClass();
-        subObj.readFun();
-    }
-}
-            </pre>
-
+<!--#############################*******************************$$$$$$$$$$$**************************#########################################-->
         </section>
     </main> 
-
     <aside id="aside">
         <div class="asideContentContainer"><h2>Table of content</h2></div>
         <ul >
