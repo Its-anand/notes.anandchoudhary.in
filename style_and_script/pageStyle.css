@@ -151,8 +151,8 @@ main p{
 main #heading{
     margin: 3rem 0;
 }
-main h2:hover::before{
-content: '# ';
+main h2:hover::after{
+content: ' #';
 color: var(--link);
 cursor: pointer;
 }
@@ -224,6 +224,9 @@ aside a{
     color: gray;
 }
 
+tr td:first-child{
+    padding: 0 1rem 0 0;
+}
 
 
 /*XXXXXXXXXXXXXXXXXXXXXXXXXXXXX--------Responsive--------XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX*/
