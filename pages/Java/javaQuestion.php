@@ -38,26 +38,20 @@
         </nav>
     </header>
     <main>
-<!--
-    <div class="topics" id="What_are_various_access_specifiers/_access_modifier_in_Java">
-Heading  <h2 class="subheading" >1. What are various access specifiers/ access modifier in Java.</h2>
-
-<p>
-text
-</p>
-<h3>Example</h3>
-
-CODE START
-<pre class="code">
-  int x, y, z;
-  x = y = z = 50;
-  System.out.println(x + y + z);
-</pre>
-CODE END
-</div>
--->
+    
         <?php
-            include('./content/questions.php');
+        
+        if(!empty($_GET)){
+            $value = "$_GET[value]";
+            include($value);
+        }
+        else{
+        ?>
+            <div class="warning">
+                <h2>Select a date from archive</h2>
+            </div>
+        <?php
+        }
         ?>
     </main>
 
@@ -67,7 +61,7 @@ CODE END
         </div>
         <ul>
         <?php
-            include('./content/tableofcontent.php');
+            include('./tableOfContent/tableofcontent.php');
         ?>
         </ul>
     </aside>
