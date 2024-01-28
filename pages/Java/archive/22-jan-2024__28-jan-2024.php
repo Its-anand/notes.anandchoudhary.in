@@ -198,23 +198,99 @@ public class TestRun {
 </pre>
 </div>
 <!--11--><div class="topics">
-    <h2 class="subheading">1.Why is Java not a pure object oriented language?</h2>
+    <h2 class="subheading">11. Why is Java not a pure object oriented language?</h2>
+    <p>Java is not pure object oriented programming language because it contains primitive data type like int, char, float, double, boolean, byte, short, long although java also support object oriented version of them.</p>
 </div>
 
 <!--12--><div class="topics">
-<h2 class="subheading"></h2>
+<h2 class="subheading">12. What are the top Java Features.</h2>
+<b>Object Oriented</b>
+<p>In Java, almost everything is an Object.</p>
+<b>Platform Independent</b>
+<p>Java support "write once run anywhere" approach means that it can run on any platforms like windows, linux, unix, macOS etc</p>
+<b>Multithreaded</b>
+<p>With Java's multithreaded feature it is possible to write programs that can perform many tasks simultaneously.</p>
 </div>
 
 <!--13--><div class="topics">
-<h2 class="subheading"></h2>
+<h2 class="subheading">13. How do you swap two numbers without using a third variable in Java?</h2>
+<pre class="code">
+import java.util.Scanner;
+
+class swap{
+    private static int num1, num2;
+    public static void swapFunction(int a, int b){
+        num1 = a;
+        num2 = b;
+        num1 = num1+ num2;
+        num2 = num1 - num2;
+        num1 = num1 - num2;
+
+    }
+    public static void display(){
+        System.out.println("a = "+num1);
+        System.out.println("b = "+num2);
+    }
+}
+public class TestRun{
+    public static void main(String[] args){
+        int a,b;
+        Scanner input = new Scanner(System.in);
+        System.out.print("a = ");
+        a = input.nextInt();
+        System.out.print("b = ");
+        b = input.nextInt();
+        swap.swapFunction(a, b);
+        swap.display();
+    }
+}
+</pre>
 </div>
 
 <!--14--><div class="topics">
-<h2 class="subheading"></h2>
+<h2 class="subheading">14. How to find duplicate elements in an array?</h2>
+<pre class="code">
+public static void findDuplicates(int[] arr) {
+    System.out.print("Duplicate elements in the given array: ");
+    for (int i = 0; i < arr.length; i++) {
+        for (int j = i + 1; j < arr.length; j++) {
+            if (arr[i] == arr[j]) {
+                System.out.print(arr[j] + " ");
+            }
+        }
+    }
+}
+</pre>
 </div>
 
 <!--15--><div class="topics">
-<h2 class="subheading"></h2>
+<h2 class="subheading">15.How to check whether given number is binary or not?</h2>
+<pre>
+class BinaryFinder{
+    public static boolean isBinaryNumber(int num) {
+        if (num == 0 || num == 1 || num < 0) {
+            return false;
+        }
+        while (num != 0) {
+            if (num % 10 > 1) {
+                return false;
+            }
+            num = num / 10;
+        }
+        return true;
+    }
+}
+public class TestRun{
+    public static void main(String[] args) {
+        boolean check = BinaryFinder.isBinaryNumber(10140);
+        if (check) {
+            System.out.println("Number is binary");
+        } else {
+            System.out.println("Number is non binary");
+        }
+    }
+}
+</pre>
 </div>
 
 <!--16--><div class="topics">
