@@ -71,6 +71,7 @@ main{
     outline: none;
 }
 .books {
+  text-align: center;
   text-decoration: none;
   color: var(--text);
   font-weight: bolder;

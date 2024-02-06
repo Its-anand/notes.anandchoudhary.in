@@ -19,6 +19,7 @@
             <option value="css">Css</option>
             <option value="sass">Sass</option>
             <option value="javascript">JavaScript</option>
+            <option value="javainterviewtheory">Java Theory Interview Question</option>
             <option value="php">Php</option>
             <option value="mysql">Mysql</option>
             <option value="figma">Figma</option>
