@@ -60,6 +60,9 @@
             case "javascript":
                 $table = 'javascript';
                 break;
+            case "javainterviewtheory":
+                $table = 'javainterviewtheory';
+                break;            
             case "php":
                     $table = 'php_PTR';
                 break;
